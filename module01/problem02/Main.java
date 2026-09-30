@@ -1,0 +1,27 @@
+package module01.problem02;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int startingNum = input.nextInt();
+
+        int i = 0;
+        while (i <= 10) {
+
+            if (startingNum % 5 == 0) {
+                System.out.print(startingNum / 5 - 1);
+            }
+            else {
+                System.out.print(startingNum);
+            }
+            startingNum++;
+             if (i <= 9) {
+                 System.out.print(", ");
+             }
+            i++;
+        }
+    }
+}
